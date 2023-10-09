@@ -150,7 +150,7 @@ if (isset($_POST['register'])) {
                                         <div class="form-floating mb-3">
                                             <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="jenis_kelamin" name="jenis_kelamin">
                                                 <option selected>Jenis Kelamin</option>
-                                                <option value="laki_laki">Laki - Laki</option>
+                                                <option value="Laki _ laki">Laki - Laki</option>
                                                 <option value="Perempuan">Perempuan</option>
                                             </select>
                                         </div>

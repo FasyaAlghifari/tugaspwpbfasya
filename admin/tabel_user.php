@@ -116,7 +116,7 @@
                                             <td><?php echo $d['nama']; ?></td>
                                             <td><?php echo $d['jenis_kelamin']; ?></td>
                                             <td>
-                                                <img src="gambar/<?php echo $d['gambar'] ?>"height="100">
+                                                <img src="../user/gambar/<?php echo $d['gambar'] ?>"height="100">
                                             </td>
                                             <td>
                                             <a href="hapus_user.php?id=<?php echo $d['id']; ?>" class="btn btn-outline-danger hps">Hapus
