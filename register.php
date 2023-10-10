@@ -225,7 +225,7 @@ if (isset($_POST['register'])) {
                                                 });
                                             </script>
                                             <div class="d-flex align-items-right justify-content-between mt-2 mb-0">
-                                                <button type="submit" name="register" class="btn btn-primary">Register</button>
+                                                <button type="submit" name="register" class="btn btn-primary" href="sukses.php">Register</button>
                                             </div>
                                     </form>
                                 </div>
@@ -298,7 +298,7 @@ function registrasi($data)
             $gambar = $rand . '_' . $filename;
             move_uploaded_file($_FILES['gambar']['tmp_name'], 'user/gambar/' . $rand . '_' . $filename);
             mysqli_query($koneksi, "insert into data_user values('', '$nama', '$jenis_kelamin', '$gambar', '$username', '$password')");
-            header("location:login.php?alert=berhasil");
+            header("location:sukses.php");
             return mysqli_affected_rows($koneksi);
         } else {
             header("location:index.php?alert=salah ukuran");
